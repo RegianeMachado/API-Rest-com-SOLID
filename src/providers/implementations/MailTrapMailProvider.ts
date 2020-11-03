@@ -22,8 +22,8 @@ export class MailTrapMailProvider implements IMailProvider {
         address: message.to.email,
       },
       from: {
-        name: message.to.name,
-        address: message.to.email,
+        name: message.from.name,
+        address: message.from.email,
       },
       subject: message.subject,
       html: message.body,
